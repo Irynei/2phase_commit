@@ -22,7 +22,7 @@ def book_flight_and_hotel(account_conn, fly_conn, hotel_conn):
         hotel_conn.tpc_prepare()
 
         # 2 phase commit
-        # fly_conn.tpc_commit()
+        fly_conn.tpc_commit()
         account_conn.tpc_commit()
         hotel_conn.tpc_commit()
     except Exception as e:
