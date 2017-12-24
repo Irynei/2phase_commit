@@ -2,9 +2,9 @@ import psycopg2
 
 
 def connect_to_db():
-    account_conn = psycopg2.connect(dbname="account", user="postgres", password="postgres")
-    fly_conn = psycopg2.connect(dbname="fly", user="postgres", password="postgres")
-    hotel_conn = psycopg2.connect(dbname="hotel", user="postgres", password="postgres")
+    account_conn = psycopg2.connect(dbname="account", user="irko", password="1")
+    fly_conn = psycopg2.connect(dbname="fly", user="irko", password="1")
+    hotel_conn = psycopg2.connect(dbname="hotel", user="irko", password="1")
     return account_conn, fly_conn, hotel_conn,
 
 
